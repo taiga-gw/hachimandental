@@ -1,0 +1,2151 @@
+<?php 
+include_once(dirname(__FILE__) ."/unit/inc.php");
+$page_title ='ページタイトル';
+$page_description = 'ページディスクリプション';
+$page_keyword ="KW1,KW2,KW3";
+$og_type = "website";
+
+//検索エンジンから公開しないとき用
+$page_build = "test";
+$page_type = "main";
+?>
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+    <!-- <?php //include_once "./unit/gtag_head.php"; ?> -->
+
+    <?php include_once "./unit/meta.php"; ?>
+
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+    <!--/▲google fonts▲-->
+
+    <link rel="shortcut icon" href="/templates/test/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="./css/lite-yt-embed.css?v=1.0.3">
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        body {
+            font-size: 16px;
+            letter-spacing: normal;
+        }
+        .body {
+            color: #222;
+            font-size: 15px;
+            font-family: Hiragino Kaku Gothic ProN, "ヒラギノ角ゴシック", meiryo, "メイリオ", sans-serif;
+        }
+        
+        p {
+            line-height: 2em;
+        }
+        
+        .font-en01 {
+            font-family: "Crimson Text", serif;
+        }
+        
+        .serif {
+            font-family: 游明朝, YuMincho, "Hiragino Mincho ProN", "MS P明朝", serif;
+        }
+        
+        .fs-s {
+            font-size: 0.8em;
+        }
+        
+        .fs-m {
+            font-size: 1.2em;
+        }
+        
+        .fs-l {
+            font-size: 1.5em;
+        }
+        .sc-ttl {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        .sc-txt, .sc-head-txt {
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        @media screen and (min-width: 414px) {
+            /* フォントサイズがvwの場合、ここでpxに戻す */
+        }
+        
+        @media screen and (min-width: 768px) {
+            .sc-ttl {
+                font-size: 32px;
+                margin-bottom: 60px;
+            }
+            .sc-txt, .sc-head-txt {
+                margin-bottom: 60px;
+            }
+            .sc-head-txt {
+                text-align: center;
+            }
+        }
+        @media screen and (min-width: 1024px) {}
+        
+        @media screen and (min-width: 1280px) {
+            .sc {
+                padding: 100px 0;
+            }
+
+            .sc-ttl {
+                font-size: 40px;
+                margin-bottom: 100px;
+            }
+            .sc-txt, .sc-head-txt {
+                margin-bottom: 80px;
+            }
+        }
+        @media screen and (min-width: 1366px) {}
+    </style>
+    
+</head>
+
+<body id="<?php echo $page_type; ?>" class="">
+    <!-- <?php //include_once "./unit/gtag_body.php"; ?> -->
+
+    <main>
+
+        <!-- mv -->
+        <div class="mv bg01">
+            <header class="lp-hdr">
+                <picture class="header-logo">
+                    <source srcset="img/hdr-logo-tb.png" media="(min-width: 1024px)">
+                    <source srcset="img/hdr-logo-tb.png" media="(min-width: 768px)">
+                    <img src="img/hdr-logo-sp.png" alt="ハチマンデンタルクリニック">
+                </picture>
+
+                <a href="tel:046-753-9674" class="u__pc-only">
+                    <img src="" alt=""> <span>046-753-9674</span>
+                </a>
+
+            </header>
+
+            <div class="mv-gold-medal">
+                <picture class="gold-medal">
+                    <img src="./img/gold-medal-pc01.png" alt="" class="medal01">
+                    <img src="./img/gold-medal-pc02.png" alt="" class="medal02">
+                    <img src="./img/gold-medal-pc03.png" alt="" class="medal03">
+                </picture>
+            </div>
+
+            <div class="mv-price-list">
+                <!-- 1 -->
+                <div class="mv-price-list-item">
+                    <div class="mv-price-list-item-ttl u__pc-only">軽症例</div>
+
+                    <!--  -->
+                    <div class="mv-price-list-item-main">
+                        <div class="mv-price-list-item-main-l noto-serif u__sp-tb-only">軽症例
+                        </div>
+
+                        <div class="mv-price-list-item-main-r">
+                            <span class="mv-mth">月々</span>
+                            <div class="mv-text">
+                                <span class="mv-price">3,000</span> <span class="mv-yen">円</span>
+                                <p>総額250,000円<br/>92回払いの場合</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="mv-price-list-item">
+                    <div class="mv-price-list-item-ttl u__pc-only">部分矯正
+                    </div>
+
+                    <!--  -->
+                    <div class="mv-price-list-item-main">
+                        <div class="mv-price-list-item-main-l noto-serif u__sp-tb-only">部分矯正
+                        </div>
+
+                        <div class="mv-price-list-item-main-r">
+                            <span class="mv-mth">月々</span>
+                            <div class="mv-text">
+                                <span class="mv-price">6,000</span> <span class="mv-yen">円</span>
+                                <p>総額250,000円<br/>92回払いの場合</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="mv-price-list-item">
+                    <div class="mv-price-list-item-ttl u__pc-only">軽症例</div>
+
+                    <!--  -->
+                    <div class="mv-price-list-item-main">
+                        <div class="mv-price-list-item-main-l noto-serif u__sp-tb-only">軽症例
+                        </div>
+
+                        <div class="mv-price-list-item-main-r">
+                            <span class="mv-mth">月々</span>
+                            <div class="mv-text">
+                                <span class="mv-price">8,000</span> <span class="mv-yen">円</span>
+                                <p>総額570,000円<br/>106回払いの場合</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <picture class="mv">
+                <source srcset="img/hdr-bg-new-pc.png" media="(min-width: 1024px)">
+                <source srcset="img/hdr-bg-tb.png" media="(min-width: 768px)">
+                <img src="img/hdr-bg-sp.png" alt="ハチマンデンタルクリニック">
+
+
+                <a href="" class="lp-mv-btn">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="img/hdr-btn-pc.png">
+                        <source media="(min-width: 768px)" srcset="img/hdr-btn-tb.png">
+                        <img src="img/hdr-btn-sp.png" alt="" width="" height="">
+                    </picture>
+                </a>
+            </picture>
+
+        </div>
+
+        <!-- api -->
+
+        <!--  -->
+        <article>
+
+
+            <!-- 2 -->
+            <section class="sc sc-01">
+                <div class="sc_in">
+                    <div class="sc-01__block">
+                        <h2 class="sc-01_ttl noto-serif">このようなお悩みは<br class="u__sp-tb-only">ありませんか？
+                        </h2>
+
+                        <ul class="sc-01__block-list">
+                            <!-- 1 -->
+                            <li class="sc-01__block-list-item sc-01__block-list-item-1">
+                                矯正したいけど<br class="u__pc-only" />どれくらいの費用？
+                            </li>
+                            <!-- 2 -->
+                            <li class="sc-01__block-list-item sc-01__block-list-item-type2 sc-01__block-list-item-2">
+                                目立つ矯正はイヤ
+                            </li>
+
+                            <!-- 3 -->
+                            <li class="sc-01__block-list-item sc-01__block-list-item-3">
+                                前歯だけ治療したい
+                            </li>
+                            <!-- 4 -->
+                            <li class="sc-01__block-list-item sc-01__block-list-item-type2 sc-01__block-list-item-4">
+                                早く歯列を治したい
+                            </li>
+                            <!-- 5 -->
+                            <li class="sc-01__block-list-item sc-01__block-list-item-5">
+                                矯正の痛みが不安
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--  -->
+
+<style>
+.sc-02 {
+    background-color: #F9F9F9;
+    --list-gap: 16px;
+}
+.sc-02__block-list {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--list-gap);
+    max-width: 390px;
+    margin: 0 auto;
+}
+.sc-02__block-list-item {
+    max-width: 160px;
+    aspect-ratio: 1 / 1;
+    background-color: #F9F9F9;
+    box-shadow: 8px 8px 16px 0px #0000000A, -8px -8px 8px 0px #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sc-02__block-list-item img {
+    max-width: 50%;
+}
+.sc-02__block-list-item-title {
+    font-size: 14px;
+    color: #888888;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .sc-02 {
+        --list-gap: 24px;
+    }
+    .sc-02__block-list {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 768px;;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .sc-02 {
+        --list-gap: 32px;
+    }
+    .sc-02__block-list {
+        max-width: 1280px;
+    }
+    .sc-02__block-list-item {
+        max-width: 296px;
+    }
+    .sc-02__block-list-item-title {
+        font-size: 22px;
+    }
+}
+</style>
+            <section class="sc sc-02 ">
+                <div class="sc_in">
+                    <div class="sc-02__block">
+                        <h2 class="sc-ttl noto-serif">当てはまる歯並びは<span class="abr">ありませんか？</span>
+                        </h2>
+                        <ul class="sc-02__block-list noto-serif">
+                            <li class="sc-02__block-list-item">
+                                <img src="img/sc-02-01.png" alt="出っ歯">
+                                <p class="sc-02__block-list-item-title">前歯が出ている<br> （出っ歯）</p>
+                            </li>
+                            <li class="sc-02__block-list-item">
+                                <img src="img/sc-02-02.png" alt="受け口">
+                                <p class="sc-02__block-list-item-title">下顎が出ている<br>（受け口）</p>
+                            </li>
+                            <li class="sc-02__block-list-item">
+                                <img src="img/sc-02-03.png" alt="口ゴボ">
+                                <p class="sc-02__block-list-item-title">口元が出ている<br>（口ゴボ）</p>
+                            </li>
+                            <li class="sc-02__block-list-item">
+                                <img src="img/sc-02-04.png" alt="ズレている">
+                                <p class="sc-02__block-list-item-title">上下の歯が<br>ズレている</p>
+                            </li>
+                            <li class="sc-02__block-list-item">
+                                <img src="img/sc-02-05.png" alt="デコボコ">
+                                <p class="sc-02__block-list-item-title">歯並びが<br>デコボコ</p>
+                            </li>
+                            <li class="sc-02__block-list-item">
+                                <img src="img/sc-02-06.png" alt="深い">
+                                <p class="sc-02__block-list-item-title">噛み合わせが<br>深い</p>
+                            </li>
+                            <li class="sc-02__block-list-item">
+                                <img src="img/sc-02-07.png" alt="噛み合わない">
+                                <p class="sc-02__block-list-item-title">前歯が<br>噛み合わない</p>
+                            </li>
+                            <li class="sc-02__block-list-item">
+                                <img src="img/sc-02-08.png" alt="広い">
+                                <p class="sc-02__block-list-item-title">歯と歯の隙間が<br>広い</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+<style>
+.sc-03 {
+    background-image: url(./img/sc-03-back-sp.png);
+    background-size: cover;
+    background-position: top center;
+}
+.sc-03-ttl {
+    margin-top: 20px;
+}
+.sc-ttl-bubble-wrap {
+    text-align: center;
+}
+.sc-ttl-bubble {
+    aspect-ratio: 196 / 82;
+    background-image: url(./img/sc-03-ttl-bubble.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-bottom: 0.7em;
+    margin: 0 auto;
+    width: 196px;
+}
+.reservation-button-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 80px;
+}
+.web-reservation, .tel-reservation {
+    background: linear-gradient(120deg, #333 50%, #515151 50%);
+    display: inline-block;
+    padding: 20px 20px 30px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 8px 8px rgba(136, 136, 136, 0.8);
+    margin: 0 auto;
+    min-width: 320px;
+}
+.tel-reservation {
+    color: #333;
+    background: linear-gradient(120deg, #f2f2f2 50%, #fff 50%);
+}
+.web-reservation .reservation-h {
+    margin: 5px auto;
+}
+.web-reservation .reservation-h, .tel-reservation .reservation-h {
+    font-size: 24px;
+    line-height: 1;
+}
+.tel-reservation .reservation-h {
+    font-size: 32px;
+    display: inline-flex;
+    gap: 4px;
+}
+.tel-reservation .reservation-h img {
+    width: 0.5em;
+}
+.sc-03-logo-img {
+    max-width: 360px;
+    margin: 0 auto 16px;
+}
+.sc-03-timetable-wrap {
+    text-align: center;
+}
+.sc-03-timetable-inner {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+}
+.medicalhours-wrap {
+    display: flex;
+    gap: 4px;
+}
+.medicalhours-detail-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.medicalhours-detail {
+    display: inline-flex;
+    gap: 4px;
+}
+.closeddays-wrap {
+    display: flex;
+}
+.medicalhours-h, .medicalhours-detail-h, .medicalhours-detail-h, .closeddays-h {
+    background-color: #fff;
+    font-weight: 600;
+    padding: 8px 4px;
+    white-space: nowrap;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+}
+.medicalhours-h, .closeddays-h {
+    min-width: 4em;
+}
+.medicalhours-detail-t, .closeddays-detail {
+    padding: 8px 0 8px 4px;
+    display: inline-flex;
+    align-items: center;
+    text-align: left;
+    color: #fff;
+}
+@media screen and (min-width: 768px) {
+    .sc-03 {
+        background-image: url(./img/sc-03-back-tb.png);
+    }
+    .sc-ttl-bubble {
+        font-size: 20px;
+        width: 234px;
+    }
+    .web-reservation, .tel-reservation {
+        font-size: 20px;
+    }
+    .web-reservation .reservation-h, .tel-reservation .reservation-h {
+        font-size: 24px;
+    }
+    .tel-reservation .reservation-h {
+        font-size: 32px;
+    }
+    .reservation-button-wrap {
+        flex-direction: row-reverse;
+        margin-bottom: 100px;
+    }
+    .web-reservation, .tel-reservation {
+    }
+    .web-reservation, .tel-reservation {
+        min-width: 328px;
+    }
+    .sc-03-logo-img {
+        max-width: 608px;
+    }
+    .sc-03-timetable-inner {
+        flex-direction: row;
+        gap: 16px;
+    }
+    .sc-03-timetable-inner p {
+        line-height: 1;
+    }
+    .medicalhours-detail-t, .closeddays-detail {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .sc-03 {
+        background-image: url(./img/sc-03-back-pc.png);
+    }
+    .sc-ttl-bubble {
+        font-size: 24px;
+        width: 270px;
+    }
+    .web-reservation, .tel-reservation {
+        font-size: 24px;
+    }
+    .web-reservation .reservation-h, .tel-reservation .reservation-h {
+        font-size: 36px;
+    }
+    .web-reservation, .tel-reservation {
+        min-width: 512px;
+    }
+    .tel-reservation .reservation-h {
+        font-size: 48px;
+    }
+
+}
+</style>
+            <section class="sc sc-03">
+                <div class="sc_in">
+                    <div class="sc-03__block">
+                        <div class="sc-ttl-bubble-wrap noto-serif">
+                            <p class="sc-ttl-bubble">ご相談は無料です</p>
+                            <h2 class="sc-ttl noto-serif sc-03-ttl">お気軽にご相談ください</h2>
+                        </div>
+                        <div class="reservation-button-wrap">
+                            <a href="#" class="web-reservation noto-serif">
+                                <p>WEBでご予約</p>
+                                <p class="reservation-h">無料カウンセリング予約</p>
+                            </a>
+                            <a href="tel:046-753-9674" class="tel-reservation noto-serif">
+                                <p>お電話でご予約</p>
+                                <p class="reservation-h"><img src="./img/tel.svg">046-753-9674</p>
+                            </a>
+                        </div>
+                        <picture class="sc-03-logo-img">
+                            <source srcset="./img/sc-03-logo-pc.png" media="(min-width: 1024px)" type="image/png">
+                            <source srcset="./img/sc-03-logo-tb.png" media="(min-width: 768px)" type="image/png">
+                            <img src="./img/sc-03-logo-sp.png" alt="ハチマンデンタルクリニック">
+                        </picture>
+                        <div class="sc-03-timetable-wrap">
+                            <div class="sc-03-timetable-inner">
+                                <div class="medicalhours-wrap">
+                                    <p class="medicalhours-h">診療時間</p>
+                                    <div class="medicalhours-detail-wrap">
+                                        <div class="medicalhours-detail">
+                                            <p class="medicalhours-detail-h">平日</p>
+                                            <p class="medicalhours-detail-t">09:00～13:00<span class="abr">/14:00～18:00</span></p>
+                                        </div>
+                                        <div class="medicalhours-detail">
+                                            <p class="medicalhours-detail-h">土曜</p>
+                                            <p class="medicalhours-detail-t">09:00～13:00<span class="abr">/14:00～16:30</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="closeddays-wrap">
+                                    <p class="closeddays-h">休診日</p>
+                                    <p class="closeddays-detail">火・日・祝</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<style>
+.sc-04-table-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.sc-04-table {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 592px;
+}
+.sc-04-table-h, .sc-04-table-d {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 64px;
+    flex-direction: column;
+    line-height: 1.5;
+    text-align: center;
+}
+.sc-04-table-h {
+    border-radius: 24px 24px 0 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sc-04-table p:last-of-type {
+    border-radius: 0 0 24px 24px;
+}
+.sc-04-table-wire .sc-04-table-d {
+    background-color: #E7ECED;
+
+}
+.sc-04-table-wire .sc-04-table-h {
+    background-color: #BDCBCD;
+}
+.sc-04-table-mouthpiece .sc-04-table-d {
+    background-color: #E4F3F6;
+
+}
+.sc-04-table-mouthpiece .sc-04-table-h {
+    background-color: #90CFDA;
+}
+.sc-04-table-img-wrap {
+    aspect-ratio: 168 / 128;
+}
+.sc-04-table-img {
+    max-width: 80%;
+}
+@media screen and (min-width: 768px) {
+    .sc-04-table-wrap {
+        gap: 32px;
+    }
+    .sc-04-table-img-wrap {
+        height: 272px;
+    }
+    .sc-04-table-h {
+        border-radius: 40px 40px 0 0;
+        font-size: 28px;
+    }
+    .sc-04-table p:last-of-type {
+        border-radius: 0 0 40px 40px;
+    }
+    .sc-04-table-d {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .sc-04-table-wrap {
+        gap: 96px;
+    }
+
+}
+</style>
+            <section class="sc sc-04">
+                <div class="sc_in">
+                    <div class="sc-04__block">
+                        <h2 class="sc-ttl noto-serif">マウスピース矯正のメリット</h2>
+                        <p class="sc-head-txt">マウスピース矯正は、透明なマウスピース型カスタムメイド矯正装置（アライナー）を装着して歯を動かす矯正治療です。<br>
+                        取り外しが簡単で、ワイヤー矯正に抵抗がある方にも選ばれています。</p>
+                        <div class="sc-04-table-wrap">
+                            <div class="sc-04-table sc-04-table-wire">
+                                <p class="sc-04-table-h">ワイヤー矯正</p>
+                                <p class="sc-04-table-d sc-04-table-img-wrap">
+                                    <picture class="sc-04-table-img">
+                                        <source srcset="./img/sc-04-table-wire-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-04-table-wire-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-04-table-wire-sp.png" alt="ワイヤー強制">
+                                    </picture>
+                                </p>
+                                <p class="sc-04-table-d"><span>金属装置は目立つ</span></p>
+                                <p class="sc-04-table-d"><span>装着の不快感がある</span></p>
+                                <p class="sc-04-table-d"><span>自分で装置を<span class="abr">外せない</span></span></p>
+                                <p class="sc-04-table-d"><span>２週間に１度の<span class="abr">通院が必要</span></span></p>
+                                <p class="sc-04-table-d"><span>食べかすが<span class="abr">つまりやすい</span></span></p>
+                            </div>
+                            <div class="sc-04-table sc-04-table-mouthpiece">
+                                <p class="sc-04-table-h">マウスピース矯正</p>
+                                <p class="sc-04-table-d sc-04-table-img-wrap">
+                                    <picture class="sc-04-table-img">
+                                        <source srcset="./img/sc-04-table-mouthpiece-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-04-table-mouthpiece-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-04-table-mouthpiece-sp.png" alt="マウスピース矯正">
+                                    </picture>
+                                </p>
+                                <p class="sc-04-table-d"><span>透明で薄いので<span class="abr">目立たない</span></span></p>
+                                <p class="sc-04-table-d"><span>痛みが少ない</span></p>
+                                <p class="sc-04-table-d"><span>自分で取り外せる</span></p>
+                                <p class="sc-04-table-d"><span>通院頻度が少ない</span></p>
+                                <p class="sc-04-table-d"><span>食事や歯磨きが<span class="abr">いつも通り</span></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<style>
+.sc-05 {
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(200, 200, 200, 0.2) 10%, rgba(255, 255, 255, 0) 20%), radial-gradient(rgba(200, 200, 200, 0.2) 10%, transparent 20%);
+    background-position: 0 8px, 8px 0;
+    background-size: 16px 16px;
+}
+
+.sc-05 .sc-ttl-bubble {
+    aspect-ratio: 176 / 74;
+    width: 176px;
+    background-image: url(./img/sc-05-ttl-bubble.svg);
+}
+.video-wrap {
+    max-width: 1000px;
+    margin: 0 auto 24px;
+}
+.sc-05-note {
+    max-width: 720px;
+    margin: auto;
+}
+.sc-05-note li {
+    text-indent: -1.5em;
+    padding-left: 1.5em;
+    position: relative;
+}
+.sc-05-note li::before {
+    content: "※";
+    color: inherit;
+    position: relative;
+    padding-right: 0.5em;
+}
+.sc-05-note li+li {
+    margin-top: 1em;
+}
+
+
+@media screen and (min-width: 768px) {
+    .sc-05 .sc-ttl-bubble {
+        width: 234px;
+    }
+    .video-wrap {
+        margin-bottom: 40px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .sc-05 .sc-ttl-bubble {
+        width: 270px;
+    }
+}
+</style>
+            <section class="sc sc-05">
+                <div class="sc_in">
+                    <div class="sc-05__block">
+                        <div class="sc-ttl-bubble-wrap noto-serif">
+                            <p class="sc-ttl-bubble">動画で見る</p>
+                            <h2 class="sc-ttl noto-serif">マウスピース矯正</h2>
+                        </div>
+                        <div class="video-wrap">
+                            <lite-youtube videoid="avvYbA5VO0M" playlabel="Play"></lite-youtube>
+                        </div>
+                        <ul class="sc-05-note">
+                            <li>当院が使用するマウスピース型カスタムメイド矯正装置（製品名:インビザライン®、以下省略）は米国アライン・テクノロジー社の製品であり、薬機法対象外です。そのため、医薬品副作用被害救済制度の対象外となる場合があります。当院は、アライン・テクノロジー・ジャパン社を介して入手しています。</li>
+                            <li>当院で使用しているマウスピース型カスタムメイド矯正装置以外に、日本で承認を得ている医療機器・矯正装置は存在します。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+<style>
+.sc-06-ttl {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 62px;
+}
+.sc-06-ttl-sub {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.sc-06-ttl-b {
+    font-size: 64px;
+}
+.sc-06-ttl-sub, .sc-06-ttl-main {
+    display: block;
+}
+.sc-06-reason-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+    margin: 0 auto 60px;
+}
+.sc-06-reason-h, .sc-07-treatmentflow-h {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 1em;
+}
+.sc-06-reason-h-sub, .sc-07-treatmentflow-h-sub {
+    font-family: "Benne", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    margin-bottom: 8px;
+}
+.sc-06-reason-h-sub-no, .sc-07-treatmentflow-h-sub-no {
+    font-size: 1.8em;
+    margin-left: 8px;
+}
+@media screen and (min-width: 768px) {
+    .sc-06-ttl {
+        font-size: 48px;
+        margin-bottom: 80px;
+    }
+    .sc-06-ttl-sub {
+        font-size: 24px;
+    }
+    .sc-06-ttl-b {
+        font-size: 88px;
+    }
+    .sc-06-reason-h, .sc-07-treatmentflow-h {
+        font-size: 24px;
+    }
+    .sc-06-reason-item {
+        --sc-06-reason-row-gap: 50px;
+        max-width: 768px;
+    }
+    .sc-06-reason-item-01, .sc-06-reason-item-04 {
+        flex-direction: row;
+        gap: var(--sc-06-reason-row-gap);
+    }
+    .sc-06-reason-item-02 {
+        flex-direction: row-reverse;
+        gap: var(--sc-06-reason-row-gap);
+    }
+    .sc-06-reason-item-01 > div,.sc-06-reason-item-02 > div,.sc-06-reason-item-04 > div {
+        flex: calc(50% - (var(--sc-06-reason-row-gap) / 2));
+    }
+}
+@media screen and (min-width: 1280px) {
+    .sc-06-ttl {
+        margin-bottom: 104px;
+    }
+    .sc-06-reason-h, .sc-07-treatmentflow-h {
+        font-size: 32px;
+    }
+    .sc-06-reason-item {
+        --sc-06-reason-row-gap: 90px;
+        flex-direction: row;
+        max-width: 1280px;
+        margin-bottom: 0;
+    }
+    .sc-06-reason-item:nth-of-type(2n) {
+        flex-direction: row-reverse;
+    }
+    .sc-06-reason-item .sc-06-reason-img-wrap {
+        flex: 0 0 50%;
+    }
+    .sc-06-reason-item .sc-06-reason-txt-wrap {
+        flex: calc(50% - var(--sc-06-reason-row-gap));
+    }
+}
+</style>
+            <section class="sc sc-06">
+                <div class="sc_in">
+                    <div class="sc-06__block">
+                        <h2 class="sc-06-ttl noto-serif">
+                            <span class="sc-06-ttl-sub">ハチマンデンタルクリニックの<span class="abr">マウスピース矯正が</span></span>
+                            <span class="sc-06-ttl-main">選ばれる<span class="sc-06-ttl-b">5</span>つの理由</span>
+                        </h2>
+                        <div class="sc-06-reason-wrap">
+                            <div class="sc-06-reason-item sc-06-reason-item-01">
+                                <div class="sc-06-reason-img-wrap">
+                                    <picture class="sc-06-reason-img">
+                                        <source srcset="./img/sc-06-01-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-06-01-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-06-01-sp.png" alt="模型を使って説明する歯科医師">
+                                    </picture>
+                                </div>
+                                <div class="sc-06-reason-txt-wrap">
+                                    <h3 class="sc-06-reason-h noto-serif">
+                                        <span class="sc-06-reason-h-sub">Reason<span class="sc-06-reason-h-sub-no">01</span></span>
+                                        <span class="sc-06-reason-h-main">矯正認定医と<span class="abr">口腔外科専門医が在籍</span></span>
+                                    </h3>
+                                    <p class="sc-06-reason-txt">矯正専門医が治療を監修し、担当医が責任を持って対応します。さらに、親知らずの抜歯など外科的な処置も口腔外科専門医が院内で対応可能です。安心して治療をお任せください。</p>
+                                </div>
+                            </div>
+                            <div class="sc-06-reason-item sc-06-reason-item-02">
+                                <div class="sc-06-reason-img-wrap">
+                                    <picture class="sc-06-reason-img">
+                                        <source srcset="./img/sc-06-02-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-06-02-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-06-02-sp.png" alt="3Dシミュレーションモニター">
+                                    </picture>
+                                </div>
+                                <div class="sc-06-reason-txt-wrap">
+                                    <h3 class="sc-06-reason-h noto-serif">
+                                        <span class="sc-06-reason-h-sub">Reason<span class="sc-06-reason-h-sub-no">02</span></span>
+                                        <span class="sc-06-reason-h-main">無料カウンセリングで<span class="abr">3Dシミュレーションを実施</span></span>
+                                    </h3>
+                                    <p class="sc-06-reason-txt">当院では無料カウンセリング時に簡易的な3Dシミュレーションを実施し、治療後の歯並びを視覚的に確認していただけます。治療の仕上がりを事前にご確認いただき、安心して始められます。</p>
+                                </div>
+                            </div>
+                            <div class="sc-06-reason-item sc-06-reason-item-03">
+                                <div class="sc-06-reason-img-wrap">
+                                    <picture class="sc-06-reason-img">
+                                        <source srcset="./img/sc-06-03-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-06-03-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-06-03-sp.png" alt="マウスピースをつけている子どもと大人の女性">
+                                    </picture>
+                                </div>
+                                <div class="sc-06-reason-txt-wrap">
+                                    <h3 class="sc-06-reason-h noto-serif">
+                                        <span class="sc-06-reason-h-sub">Reason<span class="sc-06-reason-h-sub-no">03</span></span>
+                                        <span class="sc-06-reason-h-main">お子さまから大人まで通いやすい</span>
+                                    </h3>
+                                    <p class="sc-06-reason-txt">成長期のお子さまから大人の方まで、幅広い年齢層の患者さまに対応可能です。特に透明なマウスピースを使った矯正治療は、顎の成長をサポートしながら歯並びを整えることができ、健康的な口腔環境を促進します。</p>
+                                </div>
+                            </div>
+                            <div class="sc-06-reason-item sc-06-reason-item-04">
+                                <div class="sc-06-reason-img-wrap">
+                                    <picture class="sc-06-reason-img">
+                                        <source srcset="./img/sc-06-04-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-06-04-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-06-04-sp.png" alt="パソコンをつかたオンライン診療をしている歯科医師">
+                                    </picture>
+                                </div>
+                                <div class="sc-06-reason-txt-wrap">
+                                    <h3 class="sc-06-reason-h noto-serif">
+                                        <span class="sc-06-reason-h-sub">Reason<span class="sc-06-reason-h-sub-no">04</span></span>
+                                        <span class="sc-06-reason-h-main">オンラインで治療を<span class="abr">サポート</span></span>
+                                    </h3>
+                                    <p class="sc-06-reason-txt">「バーチャルケア」を導入し、ビデオ通話によるオンライン診療や、治療経過の確認、装着時間の遠隔管理が可能です。通院頻度を減らしながら、いつでも医師と繋がる安心感を提供します。</p>
+                                </div>
+                            </div>
+                            <div class="sc-06-reason-item sc-06-reason-item-05">
+                                <div class="sc-06-reason-img-wrap">
+                                    <picture class="sc-06-reason-img">
+                                        <source srcset="./img/sc-06-05-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-06-05-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-06-05-sp.png" alt="模型を使って説明する歯科医師">
+                                    </picture>
+                                </div>
+                                <div class="sc-06-reason-txt-wrap">
+                                    <h3 class="sc-06-reason-h noto-serif">
+                                        <span class="sc-06-reason-h-sub">Reason<span class="sc-06-reason-h-sub-no">05</span></span>
+                                        <span class="sc-06-reason-h-main">多様なニーズに応える体制</span>
+                                    </h3>
+                                    <p class="sc-06-reason-txt">系列医院含めて当グループは、10名のドクターが在籍し、総勢27名のスタッフが活躍しています。患者さま一人ひとりのニーズに応えるため、専門知識を持ったスタッフが各種診療に対応できる体制を整えています。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+
+
+
+
+
+
+<style>
+.sc-07 {
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(200, 200, 200, 0.2) 10%, rgba(255, 255, 255, 0) 20%), radial-gradient(rgba(200, 200, 200, 0.2) 10%, transparent 20%);
+    background-position: 0 8px, 8px 0;
+    background-size: 16px 16px;
+}
+.sc-07 .sc_in {
+    padding: 0 16px;
+}
+.sc-07 .sc-ttl-bubble {
+    aspect-ratio: 272 / 88;
+    width: 272px;
+    background-image: url(./img/sc-07-ttl-bubble.svg);
+}
+.sc-07-treatmentflow-h {
+    margin-bottom: 0;
+}
+.sc-07-treatmentflow-wrap {
+    padding: 24px;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 358px;
+}
+.sc-07-treatmentflow-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    gap: 24px;
+    position: relative;
+}
+.sc-07-treatmentflow-container:not(:last-of-type) {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+.sc-07-treatmentflow-container:not(:last-of-type):after {
+    content: "";
+    display: block;
+    width: 90%;
+    border-bottom: 1px solid #ccc;
+    /* width: 100%; */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sc-07 .reservation-button-wrap {
+    flex-direction: column-reverse;
+    gap: 16px;
+    margin-bottom: 0;
+}
+.sc-07 .web-reservation, .sc-07 .tel-reservation {
+    min-width: 294px;
+    width: 100%;
+}
+.sc-07 .tel-reservation {
+    background: linear-gradient(120deg, #cecece 50%, #ddd 50%);
+}
+.sc-07 .reservation-h {
+    font-size: 21px;
+}
+@media screen and (min-width: 768px) {
+    .sc-07 .sc-ttl-bubble {
+        width: 297px;
+    }
+    .sc-07-treatmentflow-wrap {
+        max-width: 688px;
+        padding: 56px 48px;
+    }
+    .sc-07-treatmentflow-container {
+	    grid-template-columns: 40% 1fr;
+        grid-template-rows: auto auto;
+    }
+    .sc-07-treatmentflow-img-wrap {
+        grid-row: 1;
+	    grid-column: 1;
+    }
+    .sc-07-treatmentflow-h {
+        grid-row: 1;
+	    grid-column: 2;
+    }
+    .sc-07-treatmentflow-detail-wrap {
+        grid-row: 2;
+	    grid-column: 1 / 3;
+    }
+    .sc-07 .reservation-button-wrap {
+        flex-direction: row-reverse;
+    }
+    .sc-07 .web-reservation, .sc-07 .tel-reservation {
+        width: 50%;
+        min-width: unset;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .sc-07 .sc-ttl-bubble {
+        width: 343px;
+    }
+    .sc-07-treatmentflow-wrap {
+        max-width: 1280px;
+        padding: 72px 128px;
+    }
+    .sc-07-treatmentflow-container {
+	    grid-template-columns: 368px 1fr;
+        grid-template-rows: auto auto;
+        gap: 46px;
+    }
+    .sc-07-treatmentflow-img-wrap {
+        grid-row: 1 / 3;
+	    grid-column: 1;
+    }
+    .sc-07-treatmentflow-h {
+        grid-row: 1;
+	    grid-column: 2;
+    }
+    .sc-07-treatmentflow-detail-wrap {
+        grid-row: 2;
+	    grid-column: 2;
+    }
+    .sc-07 .web-reservation, .sc-07 .tel-reservation {
+        min-width: 288px;
+    }
+}
+</style>
+            <section class="sc sc-07">
+                <div class="sc_in">
+                    <div class="sc-07__block">
+                        <div class="sc-ttl-bubble-wrap noto-serif">
+                            <p class="sc-ttl-bubble">お申込み～矯正完了まで</p>
+                            <h2 class="sc-ttl noto-serif">治療の流れ</h2>
+                        </div>
+                        <div class="sc-07-treatmentflow-wrap">
+                            <div class="sc-07-treatmentflow-container">
+                                <div class="sc-07-treatmentflow-img-wrap">
+                                    <picture class="sc-07-treatmentflow-img">
+                                        <source srcset="./img/sc-07-01-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-07-01-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-07-01-sp.png" alt="パソコンで歯医者の予約を取ってる女性">
+                                    </picture>
+                                </div>
+                                <h3 class="sc-07-treatmentflow-h noto-serif">
+                                    <span class="sc-07-treatmentflow-h-sub">Flow<span class="sc-07-treatmentflow-h-sub-no">01</span></span>
+                                    <span class="sc-07-treatmentflow-h-main">ご予約</span>
+                                </h3>
+                                <div class="sc-07-treatmentflow-detail-wrap">
+                                    <div class="reservation-button-wrap">
+                                        <a href="#" class="web-reservation noto-serif">
+                                            <p>WEBでご予約</p>
+                                            <p class="reservation-h">無料カウンセリング予約</p>
+                                        </a>
+                                        <a href="tel:046-753-9674" class="tel-reservation noto-serif">
+                                            <p>お電話でご予約</p>
+                                            <p class="reservation-h"><img src="./img/tel.svg">046-753-9674</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sc-07-treatmentflow-container">
+                                <div class="sc-07-treatmentflow-img-wrap">
+                                    <picture class="sc-07-treatmentflow-img">
+                                        <source srcset="./img/sc-07-02-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-07-02-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-07-02-sp.png" alt="模型を使って説明する歯科医師">
+                                    </picture>
+                                </div>
+                                <h3 class="sc-07-treatmentflow-h noto-serif">
+                                    <span class="sc-07-treatmentflow-h-sub">Flow<span class="sc-07-treatmentflow-h-sub-no">02</span></span>
+                                    <span class="sc-07-treatmentflow-h-main">無料カウンセリング</span>
+                                </h3>
+                                <div class="sc-07-treatmentflow-detail-wrap">
+                                    <p>3Dシミュレーションを用いて治療後の歯並びを視覚的に確認しながら、全体的な治療プランをご提案します。</p>
+                                </div>
+                            </div>
+                            <div class="sc-07-treatmentflow-container">
+                                <div class="sc-07-treatmentflow-img-wrap">
+                                    <picture class="sc-07-treatmentflow-img">
+                                        <source srcset="./img/sc-07-03-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-07-03-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-07-03-sp.png" alt="噛み合わせの3Dスキャナー結果が表示されているモニター">
+                                    </picture>
+                                </div>
+                                <h3 class="sc-07-treatmentflow-h noto-serif">
+                                    <span class="sc-07-treatmentflow-h-sub">Flow<span class="sc-07-treatmentflow-h-sub-no">03</span></span>
+                                    <span class="sc-07-treatmentflow-h-main">精密検査と<span class="abr">治療計画の作成</span></span>
+                                </h3>
+                                <div class="sc-07-treatmentflow-detail-wrap">
+                                    <p>治療開始が決定した後、3Dスキャナーやレントゲンで詳しい検査を行い、分析結果をもとに最適な治療計画を作成。マウスピースの製作を依頼します。</p>
+                                </div>
+                            </div>
+                            <div class="sc-07-treatmentflow-container">
+                                <div class="sc-07-treatmentflow-img-wrap">
+                                    <picture class="sc-07-treatmentflow-img">
+                                        <source srcset="./img/sc-07-04-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-07-04-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-07-04-sp.png" alt="矯正用マウスピース">
+                                    </picture>
+                                </div>
+                                <h3 class="sc-07-treatmentflow-h noto-serif">
+                                    <span class="sc-07-treatmentflow-h-sub">Flow<span class="sc-07-treatmentflow-h-sub-no">04</span></span>
+                                    <span class="sc-07-treatmentflow-h-main">矯正治療スタート</span>
+                                </h3>
+                                <div class="sc-07-treatmentflow-detail-wrap">
+                                    <p>完成したマウスピースの使い方や注意事項をご説明し、矯正治療を始めます。</p>
+                                </div>
+                            </div>
+                            <div class="sc-07-treatmentflow-container">
+                                <div class="sc-07-treatmentflow-img-wrap">
+                                    <picture class="sc-07-treatmentflow-img">
+                                        <source srcset="./img/sc-07-05-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-07-05-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-07-05-sp.png" alt="歯科診療椅子">
+                                    </picture>
+                                </div>
+                                <h3 class="sc-07-treatmentflow-h noto-serif">
+                                    <span class="sc-07-treatmentflow-h-sub">Flow<span class="sc-07-treatmentflow-h-sub-no">05</span></span>
+                                    <span class="sc-07-treatmentflow-h-main">定期的な診察・調整</span>
+                                </h3>
+                                <div class="sc-07-treatmentflow-detail-wrap">
+                                    <p>数週間から数か月ごとに通院またはオンラインで経過をチェックし、新しいマウスピースをお渡しします。いつでも気軽にご相談ください。</p>
+                                </div>
+                            </div>
+                            <div class="sc-07-treatmentflow-container">
+                                <div class="sc-07-treatmentflow-img-wrap">
+                                    <picture class="sc-07-treatmentflow-img">
+                                        <source srcset="./img/sc-07-06-pc.png" media="(min-width: 1024px)" type="image/png">
+                                        <source srcset="./img/sc-07-06-tb.png" media="(min-width: 768px)" type="image/png">
+                                        <img src="./img/sc-07-06-sp.png" alt="保定器具">
+                                    </picture>
+                                </div>
+                                <h3 class="sc-07-treatmentflow-h noto-serif">
+                                    <span class="sc-07-treatmentflow-h-sub">Flow<span class="sc-07-treatmentflow-h-sub-no">06</span></span>
+                                    <span class="sc-07-treatmentflow-h-main">治療完了と保定期間</span>
+                                </h3>
+                                <div class="sc-07-treatmentflow-detail-wrap">
+                                    <p>歯並びや噛み合わせが整ったら治療は終了。保定装置を使用して、美しい歯並びを維持し、後戻りを予防します。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+<style>
+.sec-579__wrapper-01 {
+  padding: 0 0 4rem;
+  background-color: #fce76b;
+  overflow: hidden;
+  background: linear-gradient(to right, #fce76b 0, #f5d95c 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .sec-579__wrapper-01 {
+    padding: 0;
+  }
+}
+
+.sec-579__image-01 {
+  width: 100%;
+  height: auto;
+}
+.sec-579-block {
+    background-color: #fff;
+    padding: 24px;
+}
+.sec-579__title-01 {
+  padding: 4rem 1.6rem 2rem;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sec-579__title-01 {
+    display: none;
+  }
+}
+
+.sec-579__title-01::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  border-top: 2rem solid #fff;
+  border-right: 50vw solid rgba(255, 255, 255, 0);
+  border-left: 50vw solid rgba(255, 255, 255, 0);
+  transform: translateX(-50%);
+  bottom: -2rem;
+}
+
+.sec-579__text-01 {
+  color: #256aa0;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.sec-579__text-04 {
+  color: #4dabb5;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+.sec-579__title-02 {
+  text-align: center;
+  padding: 2.4rem 0.8rem 0;
+  margin-bottom: 1.6rem;
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sec-579__title-02 {
+    padding: 0;
+    margin-bottom: 2.4rem;
+    font-size: 2rem;
+  }
+}
+
+.sec-579__text-area-01 {
+  margin-bottom: 1.6rem;
+  line-height: var(--text-01);
+}
+
+@media screen and (min-width: 768px) {
+  .sec-579__text-area-01 {
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.sec-579__inner-02 {
+  padding: 0 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sec-579__inner-02 {
+    padding: 4rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4rem;
+    width: 60rem;
+    position: relative;
+    z-index: 10;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sec-579__inner-02 {
+    background-color: #fff;
+    width: 68rem;
+  }
+}
+
+.sec-579__title-03 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sec-579__title-03 {
+    display: block;
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.sec-579__image-02 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sec-579__image-02 {
+    display: block;
+    position: absolute;
+    top: auto;
+    bottom: -0.8rem;
+    left: -10rem;
+    z-index: 5;
+    /* width: 50rem; */
+    width: 55%;
+    height: auto;
+  }
+
+  .sec-579__image-01 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sec-579__image-02 {
+    right: auto;
+    width: 68rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sec-579__inner-01 {
+    padding: 8rem 1.6rem;
+    width: 120rem;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    overflow: visible;
+    padding-top: 17rem;
+  }
+}
+
+/*! CSS Used from: https://template-site.uh-oh.jp/templates/one-love/css/style.css?v= */
+.sec-579__box-01 {
+  padding: 18px 42px;
+  background-color: #6FB5D3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.sec-579__box-01:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sec-579__box-01 {
+    background-color: #4dabb5;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-top: 2.6rem;
+  }
+
+  .sec-579__box-01:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sec-579__box-01 {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+.sec-579__image-03 {
+  display: block;
+  margin-right: 1.6rem;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .sec-579__image-03 {
+    display: block;
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 1.6rem;
+    width: 6rem;
+    height: auto;
+    top: 0;
+    left: -0.4rem;
+  }
+}
+
+.sec-579__text-08 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .sec-579__text-08 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sec-579__text-08 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sec-579__flex-02 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sec-579__title-03-01 {
+    color: #256aa0;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+  }
+
+  .sec-579__title-03-02 {
+    color: #4dabb5;
+    font-weight: bold;
+    font-size: 0.5em;
+  }
+}
+
+.sec-579__point-01 {
+  font-size: 1.1em;
+  color: #256aa0;
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: bold;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+.sec-579__point-02 {
+  font-size: 1.1em;
+  font-weight: bold;
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+</style>
+            <div class="sec-579__wrapper-01">
+                <div class="sec-579__inner-01">
+                    <div class="sec-579__title-01">
+                        <div class="sec-579__text-01">
+                            定期的な進行チェックをアプリで
+                        </div>
+                        <div class="sec-579__text-04">
+                            InvisalInvisaling Virtual Care
+                        </div>
+                    </div>
+                    <picture>
+                        <source srcset="img/sec-579-01_pc.webp" type="image/webp">
+                        <img src="img/sec-579-01_pc.png" alt="" class="sec-579__image-02" width="680" height="735">
+                    </picture>
+                    <div class="sec-579__inner-02">
+                        <div class="sec-579__title-03">
+                            <div class="sec-579__title-03-01">定期的な進行チェックをアプリで</div>
+                            <div class="sec-579__title-03-02">Invisaling Virtual Care</div>
+                        </div>
+                        <img loading="lazy" src="img/sec-579-01.webp" alt="" class="sec-579__image-01" width="680" height="735">
+                        
+                        <div class="sec-579-block">
+                            <div class="sec-579__title-02">自宅で<div class="sec-579__point-01">ドクター</div>による<span class="sec-579__point-02 u__under-line">遠隔チェック</span></div>
+                            <div class="sec-579__text-area-01">
+                                アプリを通じていつでもドクターと繋がっているので<br class="u__pc-only">
+                                オンラインで治療の経過やマウスピースのフィット確認ができます。<br class="u__pc-only">
+                                通院回数を抑えながら、無駄のない治療を可能に！
+                            </div>
+                            <div class="sec-579__flex-02">
+                                <div class="sec-579__box-01">
+                                    <img loading="lazy" src="img/sec-579-02-01.svg" alt="" class="sec-579__image-03" width="42" height="40">
+                                    <div class="sec-579__text-08">
+                                        歯並びの変化を<br class="">リアルタイムで確認
+                                    </div>
+                                </div>
+                                <div class="sec-579__box-01">
+                                    <img loading="lazy" src="img/sec-579-02-02.svg" alt="" class="sec-579__image-03" width="56" height="40">
+                                    <div class="sec-579__text-08">
+                                        気になることは<br class="">
+                                        すぐに医師に相談
+                                    </div>
+                                </div>
+                                <div class="sec-579__box-01">
+                                    <img loading="lazy" src="img/sec-579-02-03.svg" alt="" class="sec-579__image-03" width="55" height="40">
+                                    <div class="sec-579__text-08">
+                                        遠隔チェックで<br class="">
+                                        通院頻度が軽減
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+<style>
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1280px) {
+}
+</style>
+            <section class="sc sc-08">
+                <div class="sc_in">
+                    <div class="sc-08__block">
+                        <h2 class="sc-ttl noto-serif">お気軽にご相談ください</h2>
+                    </div>
+                </div>
+            </section>
+
+<style>
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1280px) {
+}
+</style>
+            <section class="sc sc-09">
+                <div class="sc_in">
+                    <div class="sc-09__block">
+                        <h2 class="sc-ttl noto-serif">お気軽にご相談ください</h2>
+                    </div>
+                </div>
+            </section>
+
+<style>
+
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1280px) {
+}
+</style>
+            <section class="sc sc-10">
+                <div class="sc_in">
+                    <div class="sc-10__block">
+                        <h2 class="sc-ttl noto-serif">お気軽にご相談ください</h2>
+                    </div>
+                </div>
+            </section>
+
+<style>
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1280px) {
+}
+</style>
+            <section class="sc sc-11">
+                <div class="sc_in">
+                    <div class="sc-11__block">
+                        <h2 class="sc-ttl noto-serif">お気軽にご相談ください</h2>
+                    </div>
+                </div>
+            </section>
+
+            
+
+<!-- 編集追加 24.12.12 -->
+<style>
+.messages__area {
+    padding: 0 0 72px;
+}
+.messages__area-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.messages__area-photo {
+    display: block;
+}
+.messages__area-photo img {
+    width: 100%;
+    height: auto;
+}
+.messages__area-content {
+    width: calc(100% - 48px);
+    margin: auto;
+    color: #333;
+}
+h2.messages__area-heading {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    letter-spacing: 0.08em;
+}
+h2.messages__area-heading em {
+    font-size: 0.7em;
+}
+.messages__area-content p {
+    margin-bottom: 16px;
+}
+.messages__area-name {
+    line-height: 1;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    align-items: flex-end;
+    margin-top: 48px;
+    justify-content: flex-end;
+}
+.messages__area-name-small {
+    font-size: 18px;
+}
+.messages__area-name-large {
+    font-size: 28px;
+}
+
+@media screen and (min-width: 768px) {
+    .messages__area-inner {
+        gap: 64px;
+        max-width: 768px;
+        margin: auto;
+    }
+    .messages__area-content {
+        width: calc(100% - 128px);
+    }
+    h2.messages__area-heading {
+        font-size: 32px;
+    }
+    h2.messages__area-heading em {
+        font-size: 24px;
+    }
+    .messages__area-name-small {
+        font-size: 24px;
+    }
+    .messages__area-name-large {
+        font-size: 32px;
+    }
+    .messages__area {
+        padding-bottom: 104px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .messages__pc-hide {
+        display: none;
+    }
+    .messages__area-inner {
+        max-width: unset;
+        margin: 0;
+    }
+    .messages__area {
+        margin-bottom: 104px;
+        padding: 144px 0;
+        background-size: contain;
+        background-position-x: right;
+        background-position-y: top;
+        background-color: #d7cfbd;
+        background-repeat: no-repeat;
+        background-image: url(img/messages-photo-pc.webp);
+    }
+    .messages__area-content {
+        width: 100%;
+        max-width: 1000px;
+        padding: 96px 104px;
+        margin-left: 210px;
+        background: rgba(255,255,255,0.76);
+        position: relative;
+    }
+    .messages__area-content::before {
+        content: "";
+        width: 210px;
+        height: 100%;
+        background: rgba(255,255,255,0.76);
+        position: absolute;
+        top: 0;
+        left: -210px;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1864px) {
+    .messages__area {
+        background-size: cover;
+    }
+    .messages__area-content {
+        margin-left: 0;
+    }
+    .messages__area-content::before {
+        width: 5.938vw;
+        left: -5.938vw;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1660px) {
+    .messages__area-content {
+        margin-left: 0;
+        max-width: 52vw;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1492px) {
+    .messages__area {
+        background-position-x: 84%;
+    }
+    h2.messages__area-heading {
+        font-size: 1.9vw;
+    }
+    h2.messages__area-heading em {
+        font-size: 1.609vw;
+    }
+    .messages__area-name-small {
+        font-size: 1.609vw;
+    }
+    .messages__area-name-large {
+        font-size: 2.145vw;
+    }
+}
+</style>
+<section id="messages-section" class="messages__area">
+    <div class="messages__area-inner">
+        <div class="messages__pc-hide">
+            <picture class="messages__area-photo">
+                <source srcset="img/messages-photo-tb.webp" media="(min-width: 768px)" type="image/webp" />
+                <img src="img/messages-photo-sp.webp" alt="ハチマンデンタルクリニック 理事長 木村 文彦">
+            </picture>
+        </div>
+        <div class="messages__area-content">
+            <h2 class="messages__area-heading noto-serif">なぜ矯正治療<em>を</em><br class="u__sp-only">検討すべき<em>なのでしょう</em>？<br><em>それは</em>見た目以上<em>の</em><br class="u__sp-only">メリット<em>があるからです。</em></h2>
+            <p>矯正治療は、歯並びを美しく整えるだけでなく、正しい噛み合わせを取り戻すための治療でもあります。噛み合わせが改善されることで、虫歯や歯周病の予防はもちろん、口腔機能の向上や体全体の健康、そして心の安定にも良い影響を与えます。私たちは、矯正治療を通して患者様が笑顔に自信を持ち、心身の健康を実感できるようサポートしたいと考えています。</p>
+            <p>「見た目が気になる」「お金が心配」といった理由で躊躇している方も、透明なマウスピース治療や部分矯正という方法があります。「もっと早く決断していれば」と思う前に、ぜひお気軽にご相談ください。</p>
+            <div class="messages__area-name noto-serif">
+                <span class="messages__area-name-small">理事長</span>
+                <span class="messages__area-name-large">木村 文彦</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 編集追加 24.12.12ここまで -->                                               
+
+
+
+
+        </article>
+    </main>
+
+
+
+<!-- 編集追加 24.12.12 -->
+<style>
+.ftr__area {
+    padding: 0;
+}
+.ftr__area-information {
+    width: calc(100% - 48px);
+    margin: auto;
+}
+.ftr__area-logo {
+    max-width: 342px;
+    display: block;
+    margin: 0 auto 28px;
+}
+.ftr__area-logo img {
+    width: 100%;
+    height: auto;
+}
+.ftr__area-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+}
+.ftr__area-photo {
+    width: 100%;
+    display: block;
+}
+.ftr__area-photo img {
+    width: 100%;
+    height: auto;
+}
+.ftr__area-clinic {
+    width: 100%;
+}
+.ftr__area-scale {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto 48px;
+}
+.ftr__area-scale li {
+    font-size: 16px;
+    color: #333;
+    background: #D9E7E9;
+    width: calc(50% - 4px);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    height: 144px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 16px;
+}
+.ftr__area-scale li:last-child {
+    width: 100%;
+    margin-bottom: 0;
+    height: 80px;
+}
+.ftr__area-scale-bold {
+    font-weight: 700;
+}
+.ftr__area-scale-bold em {
+    font-size: 32px;
+    margin: 0 6px;
+    vertical-align: -0.13em;
+}
+.ftr__area-scale-text {
+    line-height: 1.5;
+}
+.ftr__area-worktime {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin: 0 auto 16px;
+}
+.ftr__area-gray {
+    width: 64px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.3;
+    background: #F8F8F8;
+    letter-spacing: 0.06em;
+    font-size: 14px;
+    color: #333;
+}
+.ftr__area-worktime-sub {
+    width: calc(100% - 68px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.ftr__area-worktime-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.ftr__area-worktime-flex .ftr__area-gray {
+    width: 40px;
+    height: 28px;
+}
+.ftr__area-timetext {
+    width: calc(100% - 48px);
+}
+.ftr__area-holiday {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin: 0 auto 40px;
+}
+.ftr__area-holiday .ftr__area-gray {
+    width: 104px;
+    height: 32px;
+}
+.ftr__area-holiday .ftr__area-timetext {
+    width: calc(100% - 120px);
+    font-size: 14px;
+}
+a.ftr__area-tel {
+    display: inline-flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    color: #333;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+a.ftr__area-tel img {
+    width: 20px;
+    height: auto;
+    transform: translateY(1px);
+}
+.ftr__area-addr {
+    display: block;
+}
+.ftr__area-black {
+    background: #333;
+    padding: 104px 0 32px;
+    position: relative;
+    margin-top: 144px;
+}
+.ftr__area-map {
+    position: absolute;
+    transform: translate(-50%, 0);
+    top: -104px;
+    left: 50%;
+    width: calc(100% - 32px);
+    height: 178px;
+}
+.ftr__area-map iframe {
+    width: 100%;
+    height: 100%;
+}
+.ftr__area-mark {
+    display: block;
+    width: 67px;
+    margin: auto;
+}
+.ftr__area-mark img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .ftr__area-logo {
+        max-width: 687px;
+        margin-bottom: 64px;
+    }
+    .ftr__area-information {
+        max-width: 688px;
+    }
+    .ftr__area-photo {
+        width: 640px;
+    }
+    .ftr__area-flex {
+        gap: 48px;
+    }
+    .ftr__area-scale li, .ftr__area-scale li:last-child {
+        width: calc((100% - 32px) / 3);
+        height: 144px;
+        margin: 0;
+    }
+    .ftr__area-scale {
+        margin-bottom: 40px;
+    }
+    .ftr__area-gray {
+        width: 96px;
+        font-size: 16px;
+    }
+    .ftr__area-worktime-flex .ftr__area-gray {
+        width: 56px;
+    }
+    .ftr__area-worktime-sub {
+        width: calc(100% - 104px);
+        gap: 8px;
+    }
+    .ftr__area-timetext {
+        width: calc(100% - 72px);
+        font-size: 20px;
+    }
+    .ftr__area-worktime {
+        margin-bottom: 8px;
+    }
+    .ftr__area-holiday .ftr__area-gray {
+        width: 180px;
+    }
+    .ftr__area-holiday .ftr__area-timetext {
+        width: calc(100% - 196px);
+        font-size: 16px;
+    }
+    .ftr__area-holiday {
+        margin-bottom: 48px;
+    }
+    a.ftr__area-tel {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    a.ftr__area-tel img {
+        width: 32px;
+    }
+    .ftr__area-map {
+        height: 336px;
+        width: 688px;
+        top: -156px;
+    }
+    .ftr__area-black {
+        padding: 226px 0 64px;
+        margin-top: 220px;
+    }
+    .ftr__area-mark {
+        width: 101px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .ftr__area-information {
+        max-width: 1280px;
+        width: calc(100% - 88px);
+    }
+    .ftr__area-logo {
+        max-width: 736px;
+        margin-bottom: 80px;
+    }
+    .ftr__area-flex {
+        gap: 0;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .ftr__area-photo {
+        width: 50%;
+    }
+    .ftr__area-photo img {
+        height: 456px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .ftr__area-clinic {
+        width: 44%;
+    }
+    .ftr__area-scale li, .ftr__area-scale li:last-child {
+        width: calc((100% - 16px) / 3);
+    }
+    .ftr__area-scale {
+        margin-bottom: 40px;
+    }
+    .ftr__area-black {
+        padding: 232px 0 48px;
+        margin-top: 251px;
+    }
+    .ftr__area-map {
+        width: calc(100% - 48px);
+        max-width: 1280px;
+    }
+}
+</style>
+<footer class="ftr__area">
+    <div class="ftr__area-information">
+        <picture class="ftr__area-logo">
+            <img src="img/ftr-logo.svg" alt="ハチマンデンタルクリニック">
+        </picture>
+        <div class="ftr__area-flex">
+            <picture class="ftr__area-photo">
+                <source srcset="img/ftr-photo-pc.webp" media="(min-width: 1280px)" type="image/webp" />
+                <source srcset="img/ftr-photo-tb.webp" media="(min-width: 768px)" type="image/webp" />
+                <img src="img/ftr-photo-sp.webp" alt="ハチマンデンタルクリニック">
+            </picture>
+            <div class="ftr__area-clinic">
+                <ul class="ftr__area-scale">
+                    <li>
+                        <span class="ftr__area-scale-bold">デジタル機器完備</span>
+                        <span class="ftr__area-scale-text">
+                            CT<br>
+                            マイクロスコープ<br>
+                            口腔内スキャナー
+                        </span>
+                    </li>
+                    <li>
+                        <span class="ftr__area-scale-bold">個室オペ室完備</span>
+                    </li>
+                    <li>
+                        <span class="ftr__area-scale-bold">鎌倉駅徒歩<em>3</em>分</span>
+                    </li>
+                </ul>
+                <div class="ftr__area-worktime">
+                    <div class="ftr__area-gray">診療<br class="u__sp-only">時間</div>
+                    <div class="ftr__area-worktime-sub">
+                        <div class="ftr__area-worktime-flex">
+                            <div class="ftr__area-gray">平日</div>
+                            <span class="ftr__area-timetext">09:00～13:00 / 14:00～18:00</span>
+                        </div>
+                        <div class="ftr__area-worktime-flex">
+                            <div class="ftr__area-gray">土曜</div>
+                            <span class="ftr__area-timetext">09:00～13:00 / 14:00～16:30</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ftr__area-holiday">
+                    <div class="ftr__area-gray">休診日</div>
+                    <span class="ftr__area-timetext">火・日・祝</span>
+                </div>
+                <a href="tel:046-753-9674" class="ftr__area-tel noto-serif">
+                    <img src="./img/tel.svg">
+                    046-753-9674
+                </a>
+                <span class="ftr__area-addr">神奈川県鎌倉市小町1-6-6 DAIKI 2階2-C号室</span>
+            </div>
+        </div>
+    </div>
+    <div class="ftr__area-black">
+        <div class="ftr__area-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.4297442501647!2d139.5511093!3d35.3201485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f5.1!3m3!1m2!1s0x6018458a3adaf991%3A0x9fbbc110ca592678!2z6Y6M5YCJ44OP44OB44Oe44Oz44OH44Oz44K_44Or44Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sjp!4v1733974857487!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <picture class="ftr__area-mark">
+            <img src="img/ftr-mark.svg" alt="ハチマンデンタルクリニック">
+        </picture>
+    </div>
+</footer>
+<!-- 編集追加 24.12.12ここまで -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+    </script>
+
+
+    <script src="./js/lite-yt-embed.js" defer></script>
+</body>
+
+</html>
