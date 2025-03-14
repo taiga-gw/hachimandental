@@ -323,7 +323,64 @@ picture>img {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+    .mv-price-list {
+        position: absolute;
+        top: 38%;
+        left: 24px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .mv-mth {
+        color: #333;
+        font-family: "Noto Sans JP";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -1.28px;
+        text-decoration: underline;
+        text-decoration-color: #CCCCCC;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 6px;
+        padding-top: 22px;
+    }
+    .mv-text p {
+        color: #333;
+        text-align: center;
+        font-family: "Noto Sans JP";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    .mv-price-list-item-main-l {
+        writing-mode: vertical-rl;
+        color: #333;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 115%;
+        text-align: center;
+    } 
+    .mv-gold-medal {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        z-index: 1;
+    }
+    .medal01, .medal02, .medal03 {
+        width: 96px;
+        height: 96px;
+    }
+    .mv-price {
+        font-size: 38px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .u__sp-only {
         display: none;
     }
@@ -347,6 +404,31 @@ picture>img {
     .lp-mv-btn {
         bottom: 72px;
     }
+    .mv-gold-medal {
+        position: absolute;
+        top: 20%;
+        left: 50px;
+        z-index: 1;
+    }
+    .medal01, .medal02, .medal03 {
+        width: 168px;
+        height: 168px;
+    }
+    .medal01 {
+        position: absolute;
+        top: 20%;
+        left: 0px;
+    }
+    .medal02 {
+        position: absolute;
+        top: -100px;
+        left: 140px;
+    }
+    .medal03 {
+        position: absolute;
+        top: 20%;
+        left: 280px;
+    }
     .mv-price-list-item-main {
         gap: 36px;
         padding: 8px 24px;
@@ -359,12 +441,35 @@ picture>img {
         font-size: 20px;
     }
     .mv-price {
-        font-size: 64px;
+        font-size: 52px;
     }
     .mv-price-list {
-        gap: 16px;
-        left: auto;
-        right: 50%;
+        gap: 0;
+        left: 50%;
+        top: 49%;
+        right: unset;
+        width: calc(100% - 88px);
+        flex-direction: row;
+        flex-wrap: wrap;
+        transform: translate(-50%, 0);
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .mv-price-list-item {
+        width: 48.5%;
+        margin-top: 24px;
+    }
+    .mv-price-list-item:first-child {
+        margin-right: 40%;
+    }
+    .mv-text p {
+        color: #333;
+        text-align: center;
+        font-family: "Noto Sans JP";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
     }
     /*  */
     .sc-01 {
@@ -403,11 +508,6 @@ picture>img {
     .lp-mv-btn {
         width: 830px;
         bottom: -64px;
-    }
-    .mv-gold-medal {
-        flex-direction: row;
-        right: 37%;
-        top: 15%;
     }
     .mv-price-list {
         flex-direction: row;
@@ -467,6 +567,11 @@ picture>img {
     }
     .sc-01__block-list {
         justify-content: flex-start;
+    }
+    .mv-gold-medal {
+        flex-direction: row;
+        right: 37%;
+        top: 13%;
     }
 }
 
