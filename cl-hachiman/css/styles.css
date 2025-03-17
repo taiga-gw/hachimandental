@@ -491,7 +491,7 @@ picture>img {
     /*  */
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .u__sp-tb-only {
         display: none;
     }
