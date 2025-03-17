@@ -639,7 +639,12 @@ picture>img {
     }
 }
 
-@media screen and (min-width: 1366px) {}
+@media screen and (min-width: 1366px) {
+    .medal01, .medal02, .medal03 {
+        width: 200px;
+        height: 200px;
+    }
+}
 
 @media screen and (min-width: 1536px) {}
 
