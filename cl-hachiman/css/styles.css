@@ -380,7 +380,7 @@ picture>img {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1022px) {
     .u__sp-only {
         display: none;
     }
@@ -491,7 +491,7 @@ picture>img {
     /*  */
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1023px) and (max-width: 1024px) {
     .u__sp-tb-only {
         display: none;
     }
