@@ -492,8 +492,11 @@ picture>img {
 }
 
 @media screen and (min-width: 1023px) and (max-width: 1024px) {
-    .u__sp-tb-only {
+    .u__sp-only {
         display: none;
+    }
+    .u__sp-tb-only {
+        display: block;
     }
     .u__tb-only {
         display: block;
