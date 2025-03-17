@@ -491,8 +491,8 @@ picture>img {
     /*  */
 }
 
-/* @media screen and (min-width: 1024px) {
-    .u__sp-tb-only {
+@media screen and (min-width: 1024px) {
+    /* .u__sp-tb-only {
         display: none;
     }
     .u__tb-only {
@@ -517,7 +517,7 @@ picture>img {
 
     .sc-01 {
         background-image: url(../img/sc-02-bg-pc.png);
-    }
+    } */
     .sc-01__block-list {
         flex-direction: row;
         max-width: 850px;
@@ -546,7 +546,7 @@ picture>img {
         align-self: unset;
         margin-top: 112px;
     }
-} */
+}
 
 @media screen and (min-width: 1200px) {}
 
@@ -600,11 +600,12 @@ picture>img {
     }
     .sc-01 {
         background-image: url(../img/sc-02-bg-pc.png);
+        background-position-x: center;
     }
     .sc-01__block-list {
         flex-direction: row;
         max-width: 850px;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
         gap: 0;
         height: 320px;
