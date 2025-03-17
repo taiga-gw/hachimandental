@@ -598,6 +598,45 @@ picture>img {
         right: 37%;
         top: 6.5vw;
     }
+    .sc-01 {
+        background-image: url(../img/sc-02-bg-pc.png);
+    }
+    .sc-01__block-list {
+        flex-direction: row;
+        max-width: 850px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0;
+        height: 320px;
+        margin: unset;
+        margin-left: auto;
+    }
+    .sc-01__block {
+        max-width: unset;
+    }
+    .sc-01__block-list-item {
+        width: 140px;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100000px;
+    }
+    .sc-01__block-list-item:not(:first-of-type) {
+        margin-left: -30px;
+    }
+    .sc-01__block-list-item-type2 {
+        align-self: unset;
+        margin-top: 112px;
+    }
+
+    .sc-01_ttl {
+        width: 850px;
+        transform: translateY(16px);
+        text-indent: -96px;
+        margin-left: auto;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 1366px) {
