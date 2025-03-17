@@ -380,7 +380,7 @@ picture>img {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .u__sp-only {
         display: none;
     }
@@ -492,7 +492,7 @@ picture>img {
 }
 
 @media screen and (min-width: 1024px) {
-    /* .u__sp-tb-only {
+    .u__sp-tb-only {
         display: none;
     }
     .u__tb-only {
@@ -514,12 +514,6 @@ picture>img {
 
     .sc-01 {
         background-image: url(../img/sc-02-bg-pc.png);
-    } */
-    .u__tb-only {
-        display: none !important;
-    }
-    .u__pc-only {
-        display: block !important;
     }
     .sc-01_ttl.noto-serif.u__tb-pc-only {
         display: none;
