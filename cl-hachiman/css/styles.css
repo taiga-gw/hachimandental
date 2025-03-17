@@ -496,7 +496,7 @@ picture>img {
         display: none;
     }
     .u__tb-only {
-        display: none;
+        display: block;
     }
     .u__pc-only {
         display: block;
