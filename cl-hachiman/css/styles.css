@@ -616,8 +616,8 @@ picture>img {
         max-width: unset;
     }
     .sc-01__block-list-item {
-        width: 140px;
-        height: 140px;
+        width: 180px;
+        height: 180px;
         display: flex;
         justify-content: center;
         align-items: center;
