@@ -554,6 +554,18 @@ picture>img {
     body {
         font-size: 16px;
     }
+    .u__sp-tb-only {
+        display: none;
+    }
+    .u__tb-only {
+        display: none;
+    }
+    .u__tb-pc-only {
+        display: block;
+    }
+    .u__pc-only {
+        display: block;
+    }
     .sc-01__block-list-item {
         width: 180px;
         height: 180px;
@@ -567,10 +579,50 @@ picture>img {
     .sc-01__block-list {
         justify-content: flex-start;
     }
+    .lp-mv-btn {
+        width: 830px;
+        bottom: -64px;
+    }
+    .mv-price-list {
+        flex-direction: row;
+        right: 37%;
+        top: 59%;
+    }
     .mv-gold-medal {
         flex-direction: row;
         right: 37%;
         top: 13%;
+    }
+    .sc-01 {
+        background-image: url(../img/sc-02-bg-pc.png);
+    }
+    .sc-01__block-list {
+        flex-direction: row;
+        max-width: 850px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0;
+        height: 320px;
+        margin: unset;
+        margin-left: auto;
+    }
+    .sc-01__block {
+        max-width: unset;
+    }
+    .sc-01__block-list-item {
+        width: 140px;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100000px;
+    }
+    .sc-01__block-list-item:not(:first-of-type) {
+        margin-left: -30px;
+    }
+    .sc-01__block-list-item-type2 {
+        align-self: unset;
+        margin-top: 112px;
     }
 
     .sc-01_ttl {
