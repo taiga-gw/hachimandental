@@ -491,115 +491,62 @@ picture>img {
     /*  */
 }
 
-@media screen and (min-width: 1024px) {
-    .u__sp-only {
+/* @media screen and (min-width: 1024px) {
+    .u__sp-tb-only {
         display: none;
     }
-    .u__sp-tb-only {
-        display: block;
-    }
     .u__tb-only {
-        display: block;
+        display: none;
     }
     .u__tb-pc-only {
         display: block;
     }
-    /*  */
-    .mv {
-        background: linear-gradient(193deg, #EAF1F3 3.1%, #E3EAEC 76.58%);
+    .u__pc-only {
+        display: block;
     }
-    .lp-hdr {
-        top: 32px;
-        left: 40px;
-    }
+
     .lp-mv-btn {
-        bottom: 72px;
-    }
-    .mv-gold-medal {
-        position: absolute;
-        top: 20%;
-        left: 50px;
-        z-index: 1;
-    }
-    .medal01, .medal02, .medal03 {
-        width: 168px;
-        height: 168px;
-    }
-    .medal01 {
-        position: absolute;
-        top: 20%;
-        left: 0px;
-    }
-    .medal02 {
-        position: absolute;
-        top: -100px;
-        left: 140px;
-    }
-    .medal03 {
-        position: absolute;
-        top: 20%;
-        left: 280px;
-    }
-    .mv-price-list-item-main {
-        gap: 36px;
-        padding: 8px 24px;
-        height: 168px;
-    }
-    .mv-price-list-item-main-l {
-        font-size: 32px;
-    }
-    .mv-mth {
-        font-size: 20px;
-    }
-    .mv-price {
-        font-size: 52px;
+        width: 830px;
+        bottom: -64px;
     }
     .mv-price-list {
-        gap: 0;
-        left: 50%;
-        top: 49%;
-        right: unset;
-        width: calc(100% - 88px);
         flex-direction: row;
-        flex-wrap: wrap;
-        transform: translate(-50%, 0);
-        justify-content: space-between;
-        align-items: stretch;
+        right: 37%;
+        top: 59%;
     }
-    .mv-price-list-item {
-        width: 48.5%;
-        margin-top: 24px;
-    }
-    .mv-price-list-item:first-child {
-        margin-right: 40%;
-    }
-    .mv-text p {
-        color: #333;
-        text-align: center;
-        font-family: "Noto Sans JP";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-    }
-    /*  */
+
     .sc-01 {
-        background-image: url(../img/sc-02-bg-tb.png);
-        background-position: top left;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url(../img/sc-02-bg-pc.png);
     }
     .sc-01__block-list {
-        margin: auto;
-    }
-    .sc-01__block {
-        max-width: 400px;
+        flex-direction: row;
+        max-width: 850px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0;
+        height: 320px;
+        margin: unset;
         margin-left: auto;
     }
-    .sc-01_ttl {
-        margin-bottom: 40px;
+    .sc-01__block {
+        max-width: unset;
     }
-}
+    .sc-01__block-list-item {
+        width: 140px;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100000px;
+    }
+    .sc-01__block-list-item:not(:first-of-type) {
+        margin-left: -30px;
+    }
+    .sc-01__block-list-item-type2 {
+        align-self: unset;
+        margin-top: 112px;
+    }
+} */
 
 @media screen and (min-width: 1200px) {}
 
