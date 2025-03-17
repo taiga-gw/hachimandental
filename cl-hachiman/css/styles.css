@@ -473,8 +473,8 @@ picture>img {
     }
     /*  */
     .sc-01 {
-        background-image: url(../img/sc-02-bg-tb.png);
-        background-position: top left;
+        background-image: url(../img/sc-02-bg-pc.png);
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -498,9 +498,6 @@ picture>img {
     .u__tb-only {
         display: none;
     }
-    .u__tb-pc-only {
-        display: block;
-    }
     .u__pc-only {
         display: block;
     }
@@ -518,6 +515,9 @@ picture>img {
     .sc-01 {
         background-image: url(../img/sc-02-bg-pc.png);
     } */
+    .u__tb-pc-only {
+        display: none;
+    }
     .sc-01__block-list {
         flex-direction: row;
         max-width: 850px;
