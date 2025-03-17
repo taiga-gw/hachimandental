@@ -472,6 +472,12 @@ picture>img {
         line-height: 150%;
     }
     /*  */
+    .sc-01 {
+        background-image: url(../img/sc-02-bg-tb.png);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .sc-01__block-list {
         margin: auto;
     }
