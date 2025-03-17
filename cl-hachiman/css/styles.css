@@ -501,7 +501,13 @@ picture>img {
     .u__pc-only {
         display: block;
     }
-
+    .mv {
+        background: linear-gradient(193deg, #EAF1F3 3.1%, #E3EAEC 76.58%);
+    }
+    .lp-hdr {
+        top: 32px;
+        left: 40px;
+    }
     .lp-mv-btn {
         width: 830px;
         bottom: -64px;
