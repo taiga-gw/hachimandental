@@ -515,6 +515,12 @@ picture>img {
     .sc-01 {
         background-image: url(../img/sc-02-bg-pc.png);
     } */
+    .u__tb-only {
+        display: none !important;
+    }
+    .u__pc-only {
+        display: block !important;
+    }
     .sc-01_ttl.noto-serif.u__tb-pc-only {
         display: none;
     }
@@ -623,6 +629,7 @@ picture>img {
         justify-content: center;
         align-items: center;
         border-radius: 100000px;
+        font-size: 16px;
     }
     .sc-01__block-list-item:not(:first-of-type) {
         margin-left: -30px;
