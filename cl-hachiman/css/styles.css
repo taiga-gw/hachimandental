@@ -474,7 +474,7 @@ picture>img {
     /*  */
     .sc-01 {
         background-image: url(../img/sc-02-bg-pc.png);
-        background-position: center;
+        background-position: 35%;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -515,7 +515,7 @@ picture>img {
     .sc-01 {
         background-image: url(../img/sc-02-bg-pc.png);
     } */
-    .u__tb-pc-only {
+    .sc-01_ttl.noto-serif.u__tb-pc-only {
         display: none;
     }
     .sc-01__block-list {
@@ -538,6 +538,7 @@ picture>img {
         justify-content: center;
         align-items: center;
         border-radius: 100000px;
+        font-size: 13px;
     }
     .sc-01__block-list-item:not(:first-of-type) {
         margin-left: -30px;
