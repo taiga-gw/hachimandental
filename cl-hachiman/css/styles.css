@@ -585,13 +585,18 @@ picture>img {
     }
     .mv-price-list {
         flex-direction: row;
-        right: 37%;
+        right: auto;
         top: 59%;
+        left: 16.8vw;
+    }
+    .medal01, .medal02, .medal03 {
+        width: 168px;
+        height: 168px;
     }
     .mv-gold-medal {
         flex-direction: row;
         right: 37%;
-        top: 13%;
+        top: 15%;
     }
     .sc-01 {
         background-image: url(../img/sc-02-bg-pc.png);
