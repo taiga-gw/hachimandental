@@ -472,12 +472,6 @@ picture>img {
         line-height: 150%;
     }
     /*  */
-    .sc-01 {
-        background-image: url(../img/sc-02-bg-tb.png);
-        background-position: top left;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     .sc-01__block-list {
         margin: auto;
     }
@@ -633,7 +627,7 @@ picture>img {
 
     .sc-01_ttl {
         width: 850px;
-        transform: translateY(16px);
+        transform: translateY(36px);
         text-indent: -96px;
         margin-left: auto;
         text-align: center;
